@@ -7,6 +7,7 @@ import Apps from '../Apps/Apps';
 
 const Home = () => {
     const data=useLoaderData();
+    
     //console.log(data);
     return (
         <div className=' flex flex-col items-center'>

@@ -24,7 +24,7 @@ const Appdetails = () => {
 
     const [installed, setInstalled] = useState(false);
 
-    // ✅ যখন কম্পোনেন্ট লোড হবে, তখন চেক করবে app already installed কিনা
+    //  যখন কম্পোনেন্ট লোড হবে, তখন চেক করবে app already installed কিনা
     useEffect(() => {
         const storedApps = getStoredApp().map(Number);
         if (storedApps.includes(appId)) {

@@ -26,5 +26,12 @@ const addToStoredDB = (id) => {
         localStorage.setItem("appList", data);
         console.log("After:", storedAppData);
     }
-};
-export { addToStoredDB,getStoredApp };
+}
+// ✅ New function to remove app from localStorage
+const removeFromStoredDB = (id) => {
+    let storedAppData = getStoredApp();
+    storedAppData = storedAppData.filter(appId => appId.toString() !== id.toString());
+    localStorage.setItem("appList", JSON.stringify(storedAppData));
+}
+
+export { addToStoredDB, getStoredApp, removeFromStoredDB };
