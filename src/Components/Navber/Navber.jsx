@@ -8,13 +8,14 @@ const Navber = () => {
 
   const links = (
     <>
-      <Link to="/"><li className="m-2">Home</li></Link>
-      <Link to="/apps"><li className="m-2">Apps</li></Link>
-      <Link to="/installation"><li className="m-2">Installation</li></Link>
-      
+      <Link to="/" className={location.pathname === '/' ? 'font-bold text-purple-600' : 'text-gray-700'}><li className="m-2">Home</li></Link>
+      <Link to="/apps" className={location.pathname === '/apps' ? 'font-bold text-purple-600' : 'text-gray-700'}><li className="m-2">Apps</li></Link>
+      <Link to="/installation" className={location.pathname === '/installation' ? 'font-bold text-purple-600' : 'text-gray-700'}><li className="m-2">Installation</li></Link>
+
     </>
   );
 
+  
   return (
     <div className="navbar bg-base-100 shadow-sm">
       {/* Navbar Start */}
@@ -59,11 +60,17 @@ const Navber = () => {
       {/* Navbar Center for large screens */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
+        
       </div>
 
       {/* Navbar End */}
       <div className="navbar-end">
-        <a className="btn flex items-center bg-[linear-gradient(125.07deg,#632EE3,#9F62F2)] p-2 rounded-lg mr-10">
+        <a
+          href="https://github.com/ArundhotiKar" 
+          target="_blank" // opens in a new tab
+          rel="noopener noreferrer" 
+          className="btn flex items-center bg-[linear-gradient(125.07deg,#632EE3,#9F62F2)] p-2 rounded-lg mr-10"
+        >
           <img src={cat} alt="Cat" className="w-6 h-6 mr-2" />
           <h1 className="text-white text-xl">Contribute</h1>
         </a>
