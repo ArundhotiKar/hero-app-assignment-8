@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 import {
     BarChart,
@@ -13,21 +13,34 @@ import "react-toastify/dist/ReactToastify.css";
 import di from "../../assets/icon-downloads.png";
 import ri from "../../assets/icon-review.png";
 import irat from "..//../assets/icon-ratings.png";
+import { addToStoredDB, getStoredApp } from "../../Components/Utility/Database";
 
 const Appdetails = () => {
     const { id } = useParams();
     const appId = parseInt(id);
     const data = useLoaderData();
     const singleApp = data.find(app => app.id === appId);
-    const { title, image, reviews, ratingAvg, downloads, companyName, ratings } = singleApp || {};
-    // console.log(title);
+    const { title, image, reviews, ratingAvg, downloads, companyName, ratings, description } = singleApp || {};
+
     const [installed, setInstalled] = useState(false);
+
+    // ✅ যখন কম্পোনেন্ট লোড হবে, তখন চেক করবে app already installed কিনা
+    useEffect(() => {
+        const storedApps = getStoredApp().map(Number);
+        if (storedApps.includes(appId)) {
+            setInstalled(true);
+        }
+    }, [appId]);
+
+
     const handleInstall = () => {
-        setInstalled(true);
+
         toast.success(`${title} installed successfully!`, {
             position: "top-center",
             autoClose: 2000,
         });
+        addToStoredDB(appId);
+        setInstalled(true);
     };
 
     if (!singleApp) {
@@ -96,6 +109,12 @@ const Appdetails = () => {
                     </ResponsiveContainer>
                 </div>
             </div>
+            <div className="mt-10 border-t-1 border-gray-300"></div>
+            <div>
+                <h1 className="font-bold mt-8">Description</h1>
+                <p>{description}</p>
+            </div>
+
 
             {/* Toast Container */}
             <ToastContainer />
