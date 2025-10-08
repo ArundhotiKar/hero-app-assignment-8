@@ -1,0 +1,146 @@
+[
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3062/3062635.png",
+    "title": "Fitness Tracker",
+    "companyName": "HealthPlus",
+    "id": 1,
+    "description": "Fitness Tracker by HealthPlus is your ultimate companion for maintaining a healthy lifestyle. It allows you to track your daily workouts, count your steps, monitor calories burned, and keep a detailed record of your physical activities. With personalized goals, motivational reminders, and integration with wearables, you can analyze your progress over time and make adjustments to improve your fitness journey. The app also features charts, progress reports, and social sharing options to keep you motivated and connected with friends.",
+    "size": 45,
+    "reviews": 1200,
+    "ratingAvg": 4.5,
+    "downloads": 500000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 600 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3135/3135715.png",
+    "title": "Budget Manager",
+    "companyName": "FinanceTools",
+    "id": 2,
+    "description": "Budget Manager by FinanceTools is a comprehensive app to manage your personal finances effortlessly. Track your income, categorize expenses, set monthly budgets, and plan your savings with intuitive charts and reports. The app provides alerts for overspending, allows for recurring transaction tracking, and offers detailed insights to help you make smarter financial decisions. Perfect for students, professionals, or families, it simplifies finance management with a user-friendly interface and secure data storage.",
+    "size": 30,
+    "reviews": 800,
+    "ratingAvg": 4.2,
+    "downloads": 300000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 300 },
+      { "name": "5 star", "count": 340 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2910/2910763.png",
+    "title": "Photo Editor Pro",
+    "companyName": "CreativeLab",
+    "id": 3,
+    "description": "Photo Editor Pro by CreativeLab is a powerful and easy-to-use photo editing app for everyone. Enhance your pictures with advanced filters, effects, and retouching tools. Crop, rotate, and adjust brightness, contrast, and saturation with precision. It also offers creative tools like stickers, frames, and text overlays to make your photos unique. With support for high-resolution images and social media sharing, you can create professional-quality images directly from your mobile device.",
+    "size": 60,
+    "reviews": 1500,
+    "ratingAvg": 4.7,
+    "downloads": 750000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 500 },
+      { "name": "5 star", "count": 870 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/906/906334.png",
+    "title": "Language Learner",
+    "companyName": "EduSmart",
+    "id": 4,
+    "description": "Language Learner by EduSmart is a comprehensive app designed to help you learn new languages quickly and effectively. It offers interactive lessons, quizzes, and speaking exercises to improve vocabulary, grammar, and pronunciation. The app features gamified learning, daily challenges, and progress tracking to keep you motivated. With a large library of languages and cultural tips, you can practice in real-life scenarios and build confidence in communication. Ideal for beginners and advanced learners alike.",
+    "size": 55,
+    "reviews": 950,
+    "ratingAvg": 4.3,
+    "downloads": 420000,
+    "ratings": [
+      { "name": "1 star", "count": 25 },
+      { "name": "2 star", "count": 35 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 340 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/727/727245.png",
+    "title": "Music Streamer",
+    "companyName": "SoundWave",
+    "id": 5,
+    "description": "Music Streamer by SoundWave lets you listen to millions of songs anytime, anywhere. Create and customize playlists, follow your favorite artists, and discover new tracks based on your preferences. The app offers high-quality audio streaming, offline downloads, and personalized recommendations. Explore curated playlists for different moods, workouts, or relaxation. With a simple interface and smart search functionality, Music Streamer ensures a seamless and enjoyable music experience.",
+    "size": 70,
+    "reviews": 2000,
+    "ratingAvg": 4.6,
+    "downloads": 900000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 600 },
+      { "name": "5 star", "count": 1100 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/414/414825.png",
+    "title": "Weather Forecast",
+    "companyName": "SkyTech",
+    "id": 6,
+    "description": "Weather Forecast by SkyTech provides accurate and timely weather updates to help you plan your day. Get detailed information about temperature, humidity, wind speed, precipitation, and severe weather alerts. The app offers hourly, daily, and weekly forecasts with interactive radar maps. Customize notifications for your location, track multiple cities, and access lifestyle weather tips. Perfect for travelers, commuters, or anyone who wants to stay ahead of changing weather conditions.",
+    "size": 25,
+    "reviews": 600,
+    "ratingAvg": 4.1,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 250 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
+    "title": "Recipe Book",
+    "companyName": "Foodies Inc.",
+    "id": 7,
+    "description": "Recipe Book by Foodies Inc. is your personal cooking companion with thousands of recipes from around the world. Each recipe comes with step-by-step instructions, ingredient lists, cooking tips, and photos. Save your favorite recipes, create shopping lists, and explore curated collections based on cuisine, difficulty, or dietary preferences. The app also features video tutorials, meal planning suggestions, and social sharing options. Ideal for beginners and professional chefs looking to expand their culinary skills.",
+    "size": 50,
+    "reviews": 1100,
+    "ratingAvg": 4.4,
+    "downloads": 480000,
+    "ratings": [
+      { "name": "1 star", "count": 35 },
+      { "name": "2 star", "count": 25 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 400 },
+      { "name": "5 star", "count": 520 }
+    ]
+  },
+  {
+    "image": "https://cdn-icons-png.flaticon.com/512/2910/2910765.png",
+    "title": "Task Manager",
+    "companyName": "ProductiveApps",
+    "id": 8,
+    "description": "Task Manager by ProductiveApps helps you organize your daily tasks, set priorities, and increase productivity. Add tasks, create subtasks, set deadlines, and receive reminders to stay on track. The app allows for project management, progress tracking, and collaboration with team members. With an intuitive interface, calendar integration, and customizable themes, you can manage personal or professional tasks efficiently. Boost your productivity and never miss a deadline again.",
+    "size": 35,
+    "reviews": 700,
+    "ratingAvg": 4.0,
+    "downloads": 320000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 220 },
+      { "name": "5 star", "count": 260 }
+    ]
+  }
+]
