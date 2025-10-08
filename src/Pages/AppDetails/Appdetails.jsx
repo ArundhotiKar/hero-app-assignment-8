@@ -1,18 +1,25 @@
 import React, { useState } from "react";
 import { useLoaderData, useParams } from "react-router";
-import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
+import {
+    BarChart,
+    Bar,
+    XAxis,
+    YAxis,
+    Tooltip,
+    ResponsiveContainer,
+} from "recharts";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import di from "../../assets/icon-downloads.png";
 import ri from "../../assets/icon-review.png";
-import  irat from "..//../assets/icon-ratings.png";
+import irat from "..//../assets/icon-ratings.png";
 
 const Appdetails = () => {
     const { id } = useParams();
     const appId = parseInt(id);
     const data = useLoaderData();
     const singleApp = data.find(app => app.id === appId);
-    const { title, image, reviews, ratingAvg, downloads,companyName } = singleApp || {};
+    const { title, image, reviews, ratingAvg, downloads, companyName, ratings } = singleApp || {};
     // console.log(title);
     const [installed, setInstalled] = useState(false);
     const handleInstall = () => {
@@ -26,6 +33,11 @@ const Appdetails = () => {
     if (!singleApp) {
         return <p className="text-center mt-10 text-red-500">App not found</p>;
     }
+
+    // ✅ Sort ratings (5 star first)
+    const sortedRatings = [...(ratings || [])].sort(
+        (a, b) => parseInt(b.name) - parseInt(a.name)
+    );
 
     return (
         <div className="max-w-6xl mx-auto mt-10 p-6">
@@ -56,8 +68,8 @@ const Appdetails = () => {
                         disabled={installed}
                         onClick={handleInstall}
                         className={`mt-3 px-6 py-2 rounded-lg text-white font-semibold ${installed
-                                ? "bg-gray-400 cursor-not-allowed"
-                                : "bg-gradient-to-r from-purple-600 to-indigo-500 hover:opacity-90"
+                            ? "bg-gray-400 cursor-not-allowed"
+                            : "bg-gradient-to-r from-purple-600 to-indigo-500 hover:opacity-90"
                             }`}
                     >
                         {installed ? "✅ Installed" : "⬇️ Install Now"}
@@ -65,6 +77,25 @@ const Appdetails = () => {
                 </div>
             </div>
             <div className="mt-10 border-t-1 border-gray-300"></div>
+
+            {/* Ratings Chart */}
+            <div className="mt-10">
+                <h2 className="text-lg font-semibold mb-4">Ratings</h2>
+                <div className="w-full h-52">
+                    <ResponsiveContainer width="100%" height="100%">
+                        <BarChart
+                            data={sortedRatings}
+                            layout="vertical"
+                            margin={{ right: 20 }}
+                        >
+                            <XAxis type="number" />
+                            <YAxis type="category" dataKey="name" />
+                            <Tooltip />
+                            <Bar dataKey="count" fill="#FF9900" barSize={30} />
+                        </BarChart>
+                    </ResponsiveContainer>
+                </div>
+            </div>
 
             {/* Toast Container */}
             <ToastContainer />
